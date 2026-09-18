@@ -1,0 +1,56 @@
+to apply-fertility
+
+  ask households
+  [
+    hh_reproduce
+  ]
+
+end
+
+to hh_reproduce
+
+  ; iterate for the members,
+  ; testing coupled women for the corresponding fertility rate
+  ; and generates a new born individual if passing test.
+
+  foreach hh_membersIndexes
+  [
+    memberIndex ->
+    ; there is still a couple to consider and the member is female
+    if (item memberIndex hh_membersSex and (item memberIndex hh_membersMarriage != -1))
+    [
+      if (random-float 1 < get-fertility-prob-from-table (item memberIndex hh_membersAge))
+      [
+        hh_add-offspring 0 ; add a newborn
+        if (hh_tellYourStory) [ print (word "Member " memberIndex " of household " self " give birth to a new child.") ]
+      ]
+    ]
+  ]
+
+end
+
+to hh_add-offspring [ initialAge ]
+
+  ; add a newborn to the household
+  ; the specification of initialAge is needed to use this in setup
+  set hh_membersAge lput initialAge hh_membersAge
+  set hh_membersSex lput (random 2 = 0) hh_membersSex
+  set hh_membersMarriage lput -1 hh_membersMarriage ; any offspring will be single
+
+  ifelse (last hh_membersSex)
+  [ set womenBirths womenBirths + 1 ]
+  [ set menBirths menBirths + 1 ]
+
+end
+
+to-report get-fertility-prob-from-table [ age ]
+
+  let probPregnancy 0
+
+  if (age < length fertilityTable) 
+  [ set probPregnancy (item age fertilityTable) ]
+  ; In very rare cases, under certain parameter values, the woman could be initialise as very (impossibly) old.
+
+  report probPregnancy
+
+end

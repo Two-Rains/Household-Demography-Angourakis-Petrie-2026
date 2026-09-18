@@ -1,0 +1,157 @@
+to apply-hh-migration
+
+    if (external-household-pool = 0) ;; only in the first run of this procedure
+    [
+      set external-household-pool []
+    ]
+    if (currentDayOfYear = 1)
+    [
+        set-hh-migration-event-schedule
+    ]
+
+    repeat (item (currentDayOfYear - 1) hh-migration-event-schedule)
+    [
+        if (migration-mode = "inflow")
+        [ perform-in-hh-migration ]
+        if (migration-mode = "outflow")
+        [ perform-out-hh-migration ]
+        if (migration-mode = "mixed")
+        [
+            ifelse (random 2 = 0)
+            [ perform-out-hh-migration ]
+            [ perform-in-hh-migration ]
+        ]
+    ]
+
+end
+
+to set-hh-migration-event-schedule
+
+    set hh-migration-event-schedule n-values year-length-in-days [ i -> 0 ]
+
+    if (enable-migration)
+    [
+      repeat hh-migration-events-per-year
+      [
+        let aDay random (year-length-in-days - 1)
+        let newCount (item aDay hh-migration-event-schedule) + 1
+        set hh-migration-event-schedule replace-item aDay hh-migration-event-schedule newCount
+      ]
+    ]
+
+end
+
+to perform-in-hh-migration
+
+  if (migrant-type = "households" or migrant-type = "both")
+  [
+    create-households hh-migration-households-per-event
+    [ 
+      hh_initialise-migrant
+      set hhInToday hhInToday + 1
+      foreach hh_membersSex
+      [
+        memberSex ->
+        ifelse (memberSex)
+        [ set womenInToday womenInToday + 1 ]
+        [ set menInToday menInToday + 1 ]
+      ]
+    ]
+  ]
+
+end
+
+to perform-out-hh-migration
+
+  if (migrant-type = "households" or migrant-type = "both")
+  [
+    ask n-of hh-migration-households-per-event households
+    [ 
+      set external-household-pool lput (hh_export-data-to-external-pool) external-household-pool
+      set hhOutToday hhOutToday + 1
+      foreach hh_membersSex
+      [
+        memberSex ->
+        ifelse (memberSex)
+        [ set womenOutToday womenOutToday + 1 ]
+        [ set menOutToday menOutToday + 1 ]
+      ]
+      die 
+    ]
+  ]
+
+end
+
+to hh_initialise-migrant
+
+  ifelse (length external-household-pool > 0)
+  [
+    ;; sample archived household
+    let importedHH one-of external-household-pool
+
+    ;; unpack
+    let oldLineage item 0 importedHH
+    let oldMaxCoupleCount item 1 importedHH
+    let oldAges item 2 importedHH
+    let oldSexes item 3 importedHH
+    let oldMarriages item 4 importedHH
+    let oldGestation item 5 importedHH
+    let oldAmenorrhea item 6 importedHH
+
+    ;; optional scrambling
+    let newAges scramble-migrant-ages oldAges
+
+    ;; assign
+    set hh_lineage lput (word "m" who) oldLineage ;; migrant lineage marker
+    set hh_maxCoupleCount oldMaxCoupleCount
+    set hh_membersAge newAges
+    set hh_membersSex oldSexes
+    set hh_membersMarriage oldMarriages
+    set hh_membersGestation oldGestation
+    set hh_membersAmenorrhea oldAmenorrhea
+
+    ;; initialise
+    set hh_age get-initial-household-age
+    set hh_memberIndexesToDelete (list)
+    set hh_tellYourStory false
+
+    ;; optionally remove from pool
+    ;; set external-household-pool remove importedHH external-household-pool
+
+    ;;; move to empty or less crowded patch, just in sake of visualisation
+    move-to min-one-of patches [count households-here]
+  ]
+  [
+    ;; fallback if pool empty
+    hh_initialise
+
+    ;; overwrite with migrant lineage marker
+    set hh_lineage (list (word "m" who))
+  ]
+
+end
+
+to-report hh_export-data-to-external-pool
+
+  report (list
+    hh_lineage
+    hh_maxCoupleCount
+    hh_membersAge
+    hh_membersSex
+    hh_membersMarriage
+    hh_membersGestation
+    hh_membersAmenorrhea
+  )
+
+end
+
+to-report scramble-migrant-ages [ ageList ]
+
+  report map
+  [
+    age ->
+    max (list 0 (age + random 2000 - 1000))
+  ]
+  ageList
+
+end

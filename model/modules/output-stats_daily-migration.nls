@@ -1,0 +1,123 @@
+to reset-demography-stats-day
+
+  set womenBirthsToday 0
+  set menBirthsToday 0
+  set womenDeathsToday 0
+  set menDeathsToday 0
+  
+  set womenInToday 0
+  set menInToday 0
+  set womenOutToday 0
+  set menOutToday 0
+
+  set couplesAcceptedToday 0
+  set couplesRejectedToday 0
+
+  set totalWomen 0
+  set totalMen 0
+  set femaleRatio -1
+  set womenAgeStructure (list)
+  set menAgeStructure (list)
+  set womenFirstAgeGroup 0
+  set menFirstAgeGroup 0
+
+  set hhInToday 0
+  set hhOutToday 0
+
+  set netMigrationToday 0
+
+end
+
+to update-demography-stats
+
+  set totalHouseholds count households
+  set totalIndividuals 0
+
+  ask households
+  [
+    foreach hh_membersIndexes
+    [
+      memberIndex ->
+      let ageInYears get-age-in-years-old (item memberIndex hh_membersAge)
+      ifelse (item memberIndex hh_membersSex)
+      [
+        set totalWomen totalWomen + 1
+        set womenAgeStructure lput ageInYears womenAgeStructure
+        if (ageInYears < 5)
+        [ set womenFirstAgeGroup womenFirstAgeGroup + 1 ]
+      ]
+      [
+        set totalMen totalMen + 1
+        set menAgeStructure lput ageInYears menAgeStructure
+        if (ageInYears < 5)
+        [ set menFirstAgeGroup menFirstAgeGroup + 1 ]
+      ]
+      set totalIndividuals totalIndividuals + 1
+    ]
+  ]
+  set netMigrationToday (womenInToday + menInToday) - (womenOutToday + menOutToday)
+
+  carefully [ set femaleRatio totalWomen / totalIndividuals ] [ set femaleRatio "" ]
+
+  carefully [ set totalOrphans length orphanList ] [ set totalOrphans 0 ]
+
+  set womenBirthsThisYear womenBirthsThisYear + womenBirthsToday
+  set menBirthsThisYear menBirthsThisYear + menBirthsToday
+  set womenDeathsThisYear womenDeathsThisYear + womenDeathsToday
+  set menDeathsThisYear menDeathsThisYear + menDeathsToday
+  set womenInThisYear womenInThisYear + womenInToday
+  set menInThisYear menInThisYear + menInToday
+  set womenOutThisYear womenOutThisYear + womenOutToday
+  set menOutThisYear menOutThisYear + menOutToday
+  set couplesAcceptedThisYear couplesAcceptedThisYear + couplesAcceptedToday
+  set couplesRejectedThisYear couplesRejectedThisYear + couplesRejectedToday
+
+  set hhInThisYear hhInThisYear + hhInToday
+  set hhOutThisYear hhOutThisYear + hhOutToday
+
+  set netMigrationThisYear netMigrationThisYear + netMigrationToday
+  
+  if (currentDayOfYear = year-length-in-days)
+  [
+    carefully [ set totalPopulationGrowth 100 * (totalIndividuals - totalIndividualsLastYear) / totalIndividualsLastYear ] [ ]
+    set totalIndividualsLastYear totalIndividuals
+    
+    set womenBirthsLastYear womenBirthsThisYear
+    set menBirthsLastYear menBirthsThisYear
+    set womenDeathsLastYear womenDeathsThisYear
+    set menDeathsLastYear menDeathsThisYear
+    set womenInLastYear womenInThisYear
+    set menInLastYear menInThisYear
+    set womenOutLastYear womenOutThisYear
+    set menOutLastYear menOutThisYear
+    set couplesAcceptedLastYear couplesAcceptedThisYear
+    set couplesRejectedLastYear couplesRejectedThisYear
+
+    set hhInLastYear hhInThisYear
+    set hhOutLastYear hhOutThisYear
+
+    set netMigrationLastYear netMigrationThisYear
+    
+    reset-demography-stats-year
+  ]
+
+end
+
+to reset-demography-stats-year
+
+  set womenBirthsThisYear 0
+  set menBirthsThisYear 0
+  set womenDeathsThisYear 0
+  set menDeathsThisYear 0
+  set womenInThisYear 0
+  set menInThisYear 0
+  set womenOutThisYear 0
+  set menOutThisYear 0
+  set couplesAcceptedThisYear 0
+  
+  set hhInThisYear 0
+  set hhOutThisYear 0
+
+  set netMigrationThisYear 0
+
+end
