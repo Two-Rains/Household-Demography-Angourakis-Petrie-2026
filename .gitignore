@@ -14,3 +14,4 @@
 /data/rf_models/*.RData
 
 /plots/
+.positai
