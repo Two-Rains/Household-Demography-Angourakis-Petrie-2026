@@ -35,8 +35,8 @@ __includes [
   "modules/mortality_coale-demeny.nls"
   "modules/output-stats_daily.nls" ; ---
   "modules/experiments_daily.nls"
-  "../utils/time.nls"
-  "../utils/plot-table.nls"
+  "utils/time.nls"
+  "utils/plot-table.nls"
 ]
 
 ;;;;;;;;;;;;;;;;;

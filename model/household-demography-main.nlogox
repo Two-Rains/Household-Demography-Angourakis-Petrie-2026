@@ -35,7 +35,7 @@ __includes [
   "modules/mortality_coale-demeny.nls"
   "modules/output-stats.nls"
   "modules/experiments.nls"
-  "../utils/plot-table.nls"
+  "utils/plot-table.nls"
 ]
 
 ;;;;;;;;;;;;;;;;;

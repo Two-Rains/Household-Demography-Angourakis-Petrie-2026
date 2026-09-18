@@ -36,8 +36,8 @@ __includes [
   "modules/mortality_coale-demeny.nls"
   "modules/output-stats.nls"
   "modules/experiments_density.nls" ;---
-  "../utils/plot-table.nls"
-  "../utils/clamp.nls"
+  "utils/plot-table.nls"
+  "utils/clamp.nls"
 ]
 
 ;;;;;;;;;;;;;;;;;

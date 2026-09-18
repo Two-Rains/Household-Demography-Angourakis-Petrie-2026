@@ -38,10 +38,10 @@ __includes [
   "modules/mortality_coale-demeny.nls"
   "modules/output-stats_daily.nls" ; ---
   "modules/experiments_daily_density-K-demand-suppy.nls" ; ---
-  "../utils/time.nls"
-  "../utils/plot-table.nls"
-  "../utils/clamp.nls"
-  "../utils/parameter-checks.nls"
+  "utils/time.nls"
+  "utils/plot-table.nls"
+  "utils/clamp.nls"
+  "utils/parameter-checks.nls"
 ]
 
 ;;;;;;;;;;;;;;;;;
