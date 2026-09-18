@@ -6,3 +6,11 @@
 .RData
 .Ruser
 .Rproj.user
+
+/data/*.RData
+/data/*.rda
+/data/*.rds
+/data/pd/*.RData
+/data/rf_models/*.RData
+
+/plots/
