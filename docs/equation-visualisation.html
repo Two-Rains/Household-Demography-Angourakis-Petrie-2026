@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Age-dependent demographic schedules and ecological weights – Household Demography model: analysis notebook</title>
+<title>2&nbsp; Age-dependent demographic schedules and ecological weights – Household Demography model: analysis notebook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -69,7 +69,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./v-1-1.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -149,7 +149,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./equation-visualisation.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Age-dependent demographic schedules and ecological weights</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./equation-visualisation.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Age-dependent demographic schedules and ecological weights</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -166,7 +166,7 @@ window.Quarto = {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Household Demography model: analysis notebook</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/Andros-Spica/indus-village-model/05-household-demography" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/Two-Rains/Household-Demography-Angourakis-Petrie-2026" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
@@ -180,73 +180,67 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Index</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Intro</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Front page</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./equation-visualisation.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Age-dependent demographic schedules and ecological weights</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Age-dependent demographic schedules and ecological weights</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Base model (v1.1)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Base model (v1.1)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Density-dependent model (v1.2)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Density-dependent model (v1.2)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-2-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Demand-weighted density dependent model (v.1.2.1)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Demand-weighted density dependent model (v.1.2.1)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-2-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Demand- and supply-weighted density dependent model (v1.2.2)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Demand- and supply-weighted density dependent model (v1.2.2)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Base model with daily iteration (v1.3)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Base model with daily iteration (v1.3)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Density-dependent model with daily iteration (v1.4)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Density-dependent model with daily iteration (v1.4)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-4-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Demand-weighted density dependent model with daily iteration (v1.4.1)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Demand-weighted density dependent model with daily iteration (v1.4.1)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-4-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Demand- and supply-weighted density dependent model with daily iteration (v1.4.2)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Demand- and supply-weighted density dependent model with daily iteration (v1.4.2)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./figures.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Figures for publication</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Figures for publication</span></span></a>
   </div>
 </li>
     </ul>
@@ -259,12 +253,12 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup"><span class="header-section-number">3.1</span> Setup</a></li>
-  <li><a href="#peristerakostaki-schedules" id="toc-peristerakostaki-schedules" class="nav-link" data-scroll-target="#peristerakostaki-schedules"><span class="header-section-number">3.2</span> Peristera–Kostaki schedules</a></li>
-  <li><a href="#coaledemeny-mortality-schedules" id="toc-coaledemeny-mortality-schedules" class="nav-link" data-scroll-target="#coaledemeny-mortality-schedules"><span class="header-section-number">3.3</span> Coale–Demeny mortality schedules</a></li>
-  <li><a href="#publication-figure-2" id="toc-publication-figure-2" class="nav-link" data-scroll-target="#publication-figure-2"><span class="header-section-number">3.4</span> Publication Figure 2</a></li>
-  <li><a href="#age-weighted-demand-and-labour" id="toc-age-weighted-demand-and-labour" class="nav-link" data-scroll-target="#age-weighted-demand-and-labour"><span class="header-section-number">3.5</span> Age-weighted demand and labour</a></li>
-  <li><a href="#reproducibility-notes" id="toc-reproducibility-notes" class="nav-link" data-scroll-target="#reproducibility-notes"><span class="header-section-number">3.6</span> Reproducibility notes</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup"><span class="header-section-number">2.1</span> Setup</a></li>
+  <li><a href="#peristerakostaki-schedules" id="toc-peristerakostaki-schedules" class="nav-link" data-scroll-target="#peristerakostaki-schedules"><span class="header-section-number">2.2</span> Peristera–Kostaki schedules</a></li>
+  <li><a href="#coaledemeny-mortality-schedules" id="toc-coaledemeny-mortality-schedules" class="nav-link" data-scroll-target="#coaledemeny-mortality-schedules"><span class="header-section-number">2.3</span> Coale–Demeny mortality schedules</a></li>
+  <li><a href="#publication-figure-2" id="toc-publication-figure-2" class="nav-link" data-scroll-target="#publication-figure-2"><span class="header-section-number">2.4</span> Publication Figure 2</a></li>
+  <li><a href="#age-weighted-demand-and-labour" id="toc-age-weighted-demand-and-labour" class="nav-link" data-scroll-target="#age-weighted-demand-and-labour"><span class="header-section-number">2.5</span> Age-weighted demand and labour</a></li>
+  <li><a href="#reproducibility-notes" id="toc-reproducibility-notes" class="nav-link" data-scroll-target="#reproducibility-notes"><span class="header-section-number">2.6</span> Reproducibility notes</a></li>
   </ul>
 </nav>
     </div>
@@ -273,7 +267,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-age-dependent-schedules" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Age-dependent demographic schedules and ecological weights</span></span></h1>
+<h1 class="title"><span id="sec-age-dependent-schedules" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Age-dependent demographic schedules and ecological weights</span></span></h1>
 </div>
 
 
@@ -298,8 +292,8 @@ window.Quarto = {
 <li>the schematic adult-equivalent weights used for subsistence demand and labour availability.</li>
 </ol>
 <p>The first two components define event probabilities. The demand and labour functions instead assign relative weights to individuals according to age. None of the illustrative parameter sets below should be interpreted as calibration to a particular historical population.</p>
-<section id="setup" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="setup"><span class="header-section-number">3.1</span> Setup</h2>
+<section id="setup" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="setup"><span class="header-section-number">2.1</span> Setup</h2>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -378,8 +372,8 @@ window.Quarto = {
 </div>
 <p>The export helper writes a high-resolution PNG for the notebook, a PDF for inspection, and an EPS file for the manuscript. The EPS output uses standard vector text and lines and contains no embedded title or equation.</p>
 </section>
-<section id="peristerakostaki-schedules" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="peristerakostaki-schedules"><span class="header-section-number">3.2</span> Peristera–Kostaki schedules</h2>
+<section id="peristerakostaki-schedules" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="peristerakostaki-schedules"><span class="header-section-number">2.2</span> Peristera–Kostaki schedules</h2>
 <p>The Peristera–Kostaki function is:</p>
 <p><span class="math display">\[
 f_{\mathrm{PK}}(x)
@@ -496,7 +490,7 @@ c_1
 <img src="equation-visualisation_files/figure-html/fig-pk-illustrative-1.png" class="img-fluid figure-img" width="691">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pk-illustrative-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.1: Illustrative Peristera–Kostaki schedules. The selected profiles show how peak probability, modal age, and the pre- and post-modal spreads alter the timing and shape of annual fertility or union-formation probabilities.
+Figure&nbsp;2.1: Illustrative Peristera–Kostaki schedules. The selected profiles show how peak probability, modal age, and the pre- and post-modal spreads alter the timing and shape of annual fertility or union-formation probabilities.
 </figcaption>
 </figure>
 </div>
@@ -588,15 +582,15 @@ Figure&nbsp;3.1: Illustrative Peristera–Kostaki schedules. The selected profil
 <img src="equation-visualisation_files/figure-html/fig-pk-parameter-effects-1.png" class="img-fluid figure-img" width="768">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pk-parameter-effects-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.2: One-at-a-time exploration of the four Peristera–Kostaki parameters around a common reference schedule.
+Figure&nbsp;2.2: One-at-a-time exploration of the four Peristera–Kostaki parameters around a common reference schedule.
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="coaledemeny-mortality-schedules" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="coaledemeny-mortality-schedules"><span class="header-section-number">3.3</span> Coale–Demeny mortality schedules</h2>
+<section id="coaledemeny-mortality-schedules" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="coaledemeny-mortality-schedules"><span class="header-section-number">2.3</span> Coale–Demeny mortality schedules</h2>
 <p>The Coale–Demeny component supplies grouped probabilities of dying for four regional model families, two sexes, and 25 mortality levels. The model workflow converts these grouped schedules to annual lookup vectors with the same interpolation used when producing the NetLogo input tables.</p>
 <div class="cell">
 <details class="code-fold">
@@ -706,7 +700,7 @@ Figure&nbsp;3.2: One-at-a-time exploration of the four Peristera–Kostaki param
 <img src="equation-visualisation_files/figure-html/fig-cd-illustrative-1.png" class="img-fluid figure-img" width="691">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cd-illustrative-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.3: Illustrative female Coale–Demeny West mortality schedules. Higher numbered levels represent lower mortality and greater life expectancy at age 10.
+Figure&nbsp;2.3: Illustrative female Coale–Demeny West mortality schedules. Higher numbered levels represent lower mortality and greater life expectancy at age 10.
 </figcaption>
 </figure>
 </div>
@@ -762,7 +756,7 @@ Figure&nbsp;3.3: Illustrative female Coale–Demeny West mortality schedules. Hi
 <img src="equation-visualisation_files/figure-html/fig-cd-regions-1.png" class="img-fluid figure-img" width="691">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cd-regions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.4: Coale–Demeny regional mortality patterns for women at level 8.
+Figure&nbsp;2.4: Coale–Demeny regional mortality patterns for women at level 8.
 </figcaption>
 </figure>
 </div>
@@ -817,15 +811,15 @@ Figure&nbsp;3.4: Coale–Demeny regional mortality patterns for women at level 8
 <img src="equation-visualisation_files/figure-html/fig-cd-levels-1.png" class="img-fluid figure-img" width="691">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cd-levels-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.5: Selected mortality levels within the female Coale–Demeny West family.
+Figure&nbsp;2.5: Selected mortality levels within the female Coale–Demeny West family.
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="publication-figure-2" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="publication-figure-2"><span class="header-section-number">3.4</span> Publication Figure 2</h2>
+<section id="publication-figure-2" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="publication-figure-2"><span class="header-section-number">2.4</span> Publication Figure 2</h2>
 <p>The manuscript figure combines the compact Peristera–Kostaki and Coale–Demeny illustrations without internal titles or equations. The equations are already given in the text and would compete with the plotted information inside the figure.</p>
 <div class="cell">
 <details class="code-fold">
@@ -850,7 +844,7 @@ Figure&nbsp;3.5: Selected mortality levels within the female Coale–Demeny West
 <img src="equation-visualisation_files/figure-html/fig-demographic-schedules-1.png" class="img-fluid figure-img" width="691">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-demographic-schedules-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.6: Illustrative age-dependent probability schedules used by the Household Demography model. (A) Selected Peristera–Kostaki profiles showing how peak probability, modal age, and pre- and post-modal spread shape annual fertility or union-formation schedules. (B) Selected female Coale–Demeny West mortality schedules, showing annual probabilities of dying across mortality levels. The curves illustrate model behaviour and are not calibrated to a particular population.
+Figure&nbsp;2.6: Illustrative age-dependent probability schedules used by the Household Demography model. (A) Selected Peristera–Kostaki profiles showing how peak probability, modal age, and pre- and post-modal spread shape annual fertility or union-formation schedules. (B) Selected female Coale–Demeny West mortality schedules, showing annual probabilities of dying across mortality levels. The curves illustrate model behaviour and are not calibrated to a particular population.
 </figcaption>
 </figure>
 </div>
@@ -859,8 +853,8 @@ Figure&nbsp;3.6: Illustrative age-dependent probability schedules used by the Ho
 <p>The exported EPS can replace the current manuscript graphic directly:</p>
 <pre class="text"><code>plots/equation_visualisation/figure2_demographic_schedules.eps</code></pre>
 </section>
-<section id="age-weighted-demand-and-labour" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="age-weighted-demand-and-labour"><span class="header-section-number">3.5</span> Age-weighted demand and labour</h2>
+<section id="age-weighted-demand-and-labour" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="age-weighted-demand-and-labour"><span class="header-section-number">2.5</span> Age-weighted demand and labour</h2>
 <p>Versions v1.2.1 and v1.4.1 replace head count with age-weighted subsistence demand. Versions v1.2.2 and v1.4.2 add an age-weighted labour contribution. Both functions equal one between the lower and upper adult-equivalent breakpoints, (x_m=15) and (x_s=45), but use different exponents outside that interval:</p>
 <p><span class="math display">\[
 w(x)=
@@ -961,7 +955,7 @@ w(x)=
 <img src="equation-visualisation_files/figure-html/fig-age-weights-1.png" class="img-fluid figure-img" width="691">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-age-weights-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.7: Age-dependent adult-equivalent weights used for subsistence demand and labour availability. Both functions equal one between ages 15 and 45, while labour contribution declines much more steeply outside this interval.
+Figure&nbsp;2.7: Age-dependent adult-equivalent weights used for subsistence demand and labour availability. Both functions equal one between ages 15 and 45, while labour contribution declines much more steeply outside this interval.
 </figcaption>
 </figure>
 </div>
@@ -969,8 +963,8 @@ Figure&nbsp;3.7: Age-dependent adult-equivalent weights used for subsistence dem
 </div>
 <p>Overlaying the two functions makes their modelling distinction clearer than presenting them as isolated diagrams. Demand changes gradually across childhood and later life, whereas labour is concentrated within the central adult-age interval.</p>
 </section>
-<section id="reproducibility-notes" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="reproducibility-notes"><span class="header-section-number">3.6</span> Reproducibility notes</h2>
+<section id="reproducibility-notes" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="reproducibility-notes"><span class="header-section-number">2.6</span> Reproducibility notes</h2>
 <ul>
 <li>The Peristera–Kostaki implementation is shared by fertility and union formation, but each process and sex can use a separate parameter set.</li>
 <li>The Coale–Demeny code uses <code>demogR</code> version 0.6.0, the version used to generate the NetLogo lookup tables.</li>
@@ -1056,7 +1050,7 @@ Figure&nbsp;3.7: Age-dependent adult-equivalent weights used for subsistence dem
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/github\.com\/Andros-Spica\/indus-village-model");
+        var filterRegex = new RegExp("https:\/\/two-rains\.github\.io\/Household-Demography-Angourakis-Petrie-2026\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1385,13 +1379,13 @@ Figure&nbsp;3.7: Age-dependent adult-equivalent weights used for subsistence dem
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link" aria-label="Intro">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Intro</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="Front page">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Front page</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./v-1-1.html" class="pagination-link" aria-label="Base model (v1.1)">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Base model (v1.1)</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Base model (v1.1)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
