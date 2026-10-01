@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>9&nbsp; Density-dependent model with daily iteration (v1.4) – Household Demography model: analysis notebook</title>
+<title>8&nbsp; Density-dependent model with daily iteration (v1.4) – Household Demography model: analysis notebook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -120,7 +120,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./v-1-4.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Density-dependent model with daily iteration (v1.4)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./v-1-4.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Density-dependent model with daily iteration (v1.4)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -137,7 +137,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Household Demography model: analysis notebook</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/Andros-Spica/indus-village-model/05-household-demography" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/Two-Rains/Household-Demography-Angourakis-Petrie-2026" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
@@ -151,73 +151,67 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Index</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Intro</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Front page</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./equation-visualisation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Age-dependent demographic schedules and ecological weights</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Age-dependent demographic schedules and ecological weights</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Base model (v1.1)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Base model (v1.1)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Density-dependent model (v1.2)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Density-dependent model (v1.2)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-2-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Demand-weighted density dependent model (v.1.2.1)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Demand-weighted density dependent model (v.1.2.1)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-2-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Demand- and supply-weighted density dependent model (v1.2.2)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Demand- and supply-weighted density dependent model (v1.2.2)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Base model with daily iteration (v1.3)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Base model with daily iteration (v1.3)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-4.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Density-dependent model with daily iteration (v1.4)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Density-dependent model with daily iteration (v1.4)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-4-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Demand-weighted density dependent model with daily iteration (v1.4.1)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Demand-weighted density dependent model with daily iteration (v1.4.1)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./v-1-4-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Demand- and supply-weighted density dependent model with daily iteration (v1.4.2)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Demand- and supply-weighted density dependent model with daily iteration (v1.4.2)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./figures.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Figures for publication</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Figures for publication</span></span></a>
   </div>
 </li>
     </ul>
@@ -230,30 +224,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup"><span class="header-section-number">9.1</span> Setup</a></li>
-  <li><a href="#experiment-design" id="toc-experiment-design" class="nav-link" data-scroll-target="#experiment-design"><span class="header-section-number">9.2</span> Experiment design</a></li>
-  <li><a href="#data-loading-and-preprocessing" id="toc-data-loading-and-preprocessing" class="nav-link" data-scroll-target="#data-loading-and-preprocessing"><span class="header-section-number">9.3</span> Data loading and preprocessing</a>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup"><span class="header-section-number">8.1</span> Setup</a></li>
+  <li><a href="#experiment-design" id="toc-experiment-design" class="nav-link" data-scroll-target="#experiment-design"><span class="header-section-number">8.2</span> Experiment design</a></li>
+  <li><a href="#data-loading-and-preprocessing" id="toc-data-loading-and-preprocessing" class="nav-link" data-scroll-target="#data-loading-and-preprocessing"><span class="header-section-number">8.3</span> Data loading and preprocessing</a>
   <ul class="collapse">
-  <li><a href="#surviving-population-structure" id="toc-surviving-population-structure" class="nav-link" data-scroll-target="#surviving-population-structure"><span class="header-section-number">9.3.1</span> Surviving population structure</a></li>
+  <li><a href="#surviving-population-structure" id="toc-surviving-population-structure" class="nav-link" data-scroll-target="#surviving-population-structure"><span class="header-section-number">8.3.1</span> Surviving population structure</a></li>
   </ul></li>
-  <li><a href="#overview-of-end-states-and-dynamics" id="toc-overview-of-end-states-and-dynamics" class="nav-link" data-scroll-target="#overview-of-end-states-and-dynamics"><span class="header-section-number">9.4</span> Overview of end states and dynamics</a>
+  <li><a href="#overview-of-end-states-and-dynamics" id="toc-overview-of-end-states-and-dynamics" class="nav-link" data-scroll-target="#overview-of-end-states-and-dynamics"><span class="header-section-number">8.4</span> Overview of end states and dynamics</a>
   <ul class="collapse">
-  <li><a href="#population-persistence" id="toc-population-persistence" class="nav-link" data-scroll-target="#population-persistence"><span class="header-section-number">9.4.1</span> Population persistence</a></li>
-  <li><a href="#temporal-trajectories" id="toc-temporal-trajectories" class="nav-link" data-scroll-target="#temporal-trajectories"><span class="header-section-number">9.4.2</span> Temporal trajectories</a></li>
-  <li><a href="#household-composition" id="toc-household-composition" class="nav-link" data-scroll-target="#household-composition"><span class="header-section-number">9.4.3</span> Household composition</a></li>
-  <li><a href="#density-regulation-dynamics" id="toc-density-regulation-dynamics" class="nav-link" data-scroll-target="#density-regulation-dynamics"><span class="header-section-number">9.4.4</span> Density regulation dynamics</a></li>
-  <li><a href="#age-structure" id="toc-age-structure" class="nav-link" data-scroll-target="#age-structure"><span class="header-section-number">9.4.5</span> Age structure</a></li>
+  <li><a href="#population-persistence" id="toc-population-persistence" class="nav-link" data-scroll-target="#population-persistence"><span class="header-section-number">8.4.1</span> Population persistence</a></li>
+  <li><a href="#temporal-trajectories" id="toc-temporal-trajectories" class="nav-link" data-scroll-target="#temporal-trajectories"><span class="header-section-number">8.4.2</span> Temporal trajectories</a></li>
+  <li><a href="#household-composition" id="toc-household-composition" class="nav-link" data-scroll-target="#household-composition"><span class="header-section-number">8.4.3</span> Household composition</a></li>
+  <li><a href="#density-regulation-dynamics" id="toc-density-regulation-dynamics" class="nav-link" data-scroll-target="#density-regulation-dynamics"><span class="header-section-number">8.4.4</span> Density regulation dynamics</a></li>
+  <li><a href="#age-structure" id="toc-age-structure" class="nav-link" data-scroll-target="#age-structure"><span class="header-section-number">8.4.5</span> Age structure</a></li>
   </ul></li>
-  <li><a href="#sensitivity-analysis" id="toc-sensitivity-analysis" class="nav-link" data-scroll-target="#sensitivity-analysis"><span class="header-section-number">9.5</span> Sensitivity analysis</a>
+  <li><a href="#sensitivity-analysis" id="toc-sensitivity-analysis" class="nav-link" data-scroll-target="#sensitivity-analysis"><span class="header-section-number">8.5</span> Sensitivity analysis</a>
   <ul class="collapse">
-  <li><a href="#prepare-data-for-sensitivity-analysis" id="toc-prepare-data-for-sensitivity-analysis" class="nav-link" data-scroll-target="#prepare-data-for-sensitivity-analysis"><span class="header-section-number">9.5.1</span> Prepare data for sensitivity analysis</a></li>
-  <li><a href="#fitting-random-forest-models" id="toc-fitting-random-forest-models" class="nav-link" data-scroll-target="#fitting-random-forest-models"><span class="header-section-number">9.5.2</span> Fitting Random-forest models</a></li>
-  <li><a href="#parameter-importance-and-partial-dependence" id="toc-parameter-importance-and-partial-dependence" class="nav-link" data-scroll-target="#parameter-importance-and-partial-dependence"><span class="header-section-number">9.5.3</span> Parameter importance and partial dependence</a></li>
-  <li><a href="#age-structure-of-surviving-populations-for-selected-parameters" id="toc-age-structure-of-surviving-populations-for-selected-parameters" class="nav-link" data-scroll-target="#age-structure-of-surviving-populations-for-selected-parameters"><span class="header-section-number">9.5.4</span> Age structure of surviving populations for selected parameters</a></li>
+  <li><a href="#prepare-data-for-sensitivity-analysis" id="toc-prepare-data-for-sensitivity-analysis" class="nav-link" data-scroll-target="#prepare-data-for-sensitivity-analysis"><span class="header-section-number">8.5.1</span> Prepare data for sensitivity analysis</a></li>
+  <li><a href="#fitting-random-forest-models" id="toc-fitting-random-forest-models" class="nav-link" data-scroll-target="#fitting-random-forest-models"><span class="header-section-number">8.5.2</span> Fitting Random-forest models</a></li>
+  <li><a href="#parameter-importance-and-partial-dependence" id="toc-parameter-importance-and-partial-dependence" class="nav-link" data-scroll-target="#parameter-importance-and-partial-dependence"><span class="header-section-number">8.5.3</span> Parameter importance and partial dependence</a></li>
+  <li><a href="#age-structure-of-surviving-populations-for-selected-parameters" id="toc-age-structure-of-surviving-populations-for-selected-parameters" class="nav-link" data-scroll-target="#age-structure-of-surviving-populations-for-selected-parameters"><span class="header-section-number">8.5.4</span> Age structure of surviving populations for selected parameters</a></li>
   </ul></li>
-  <li><a href="#density-effect-scaling-sweep-experiment" id="toc-density-effect-scaling-sweep-experiment" class="nav-link" data-scroll-target="#density-effect-scaling-sweep-experiment"><span class="header-section-number">9.6</span> Density effect scaling sweep experiment</a></li>
-  <li><a href="#discussion-notes" id="toc-discussion-notes" class="nav-link" data-scroll-target="#discussion-notes"><span class="header-section-number">9.7</span> Discussion notes</a></li>
-  <li><a href="#chapter-conclusion" id="toc-chapter-conclusion" class="nav-link" data-scroll-target="#chapter-conclusion"><span class="header-section-number">9.8</span> Chapter conclusion</a></li>
+  <li><a href="#density-effect-scaling-sweep-experiment" id="toc-density-effect-scaling-sweep-experiment" class="nav-link" data-scroll-target="#density-effect-scaling-sweep-experiment"><span class="header-section-number">8.6</span> Density effect scaling sweep experiment</a></li>
+  <li><a href="#discussion-notes" id="toc-discussion-notes" class="nav-link" data-scroll-target="#discussion-notes"><span class="header-section-number">8.7</span> Discussion notes</a></li>
+  <li><a href="#chapter-conclusion" id="toc-chapter-conclusion" class="nav-link" data-scroll-target="#chapter-conclusion"><span class="header-section-number">8.8</span> Chapter conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -262,7 +256,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Density-dependent model with daily iteration (v1.4)</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Density-dependent model with daily iteration (v1.4)</span></h1>
 </div>
 
 
@@ -279,8 +273,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="setup" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="setup"><span class="header-section-number">9.1</span> Setup</h2>
+<section id="setup" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="setup"><span class="header-section-number">8.1</span> Setup</h2>
 <p>Set constant variables for this chapter.</p>
 <div class="cell">
 <details class="code-fold">
@@ -338,8 +332,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="experiment-design" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="experiment-design"><span class="header-section-number">9.2</span> Experiment design</h2>
+<section id="experiment-design" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="experiment-design"><span class="header-section-number">8.2</span> Experiment design</h2>
 <p>Sobol sampling is used to generate a diverse set of parameter combinations across the defined parameter space. This allows us to explore how different parameter configurations affect the model’s outcomes and to identify which parameters are most influential in driving population survival or extinction. The actual sampling was done with <code>library/generate_sobol.R</code> script, which generates a sample with 2,000 parameter combinations across the parameter ranges defined in <code>parameter_ranges.R</code>. Note that given the higher computational cost of daily iterations, a nested subset of 512 combinations were subsequently selected to generate sufficiently-robust simulation results that can be compared to the yearly versions.</p>
 <p>Compared to v1.3, and as a parallel to v1.2, the sampled configurations for v1.4 include <code>carrying_capacity</code> and <code>density_effect_scaling_factor</code>.</p>
 <div class="cell">
@@ -489,8 +483,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>As with v1.3, the 512-subset of the generated parameter combinations were then used to run simulations in NetLogo’s Behaviour Space, for each combination of <code>residence-rule</code> (“matrilineal-matrilocal” and “patrilineal-patrilocal”) and <code>coale-demeny-region</code> (“north”, “south”, “east”, and “west”), varying the <code>SEED</code> parameter (n = 3) to introduce stochasticity, for a total of 12,288 simulations. Moreover, all runs assume a fixed <code>maturity-age-in-years</code> of 15 years, a year length of 365 days (no leap years), and a gestation period of 280 days (40 weeks). Remember that <code>maturity-age-in-years</code> determines a conservative age solely for social maturity, used as a criterion for household viability, while union-formation and reproductive maturity are regulated probabilistically through the Peristera-Kostaki parameters in the fertility and nuptiality submodels.</p>
 </section>
-<section id="data-loading-and-preprocessing" class="level2" data-number="9.3">
-<h2 data-number="9.3" class="anchored" data-anchor-id="data-loading-and-preprocessing"><span class="header-section-number">9.3</span> Data loading and preprocessing</h2>
+<section id="data-loading-and-preprocessing" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="data-loading-and-preprocessing"><span class="header-section-number">8.3</span> Data loading and preprocessing</h2>
 <p>Load simulation end states generated with the Sobol-sampled parameter combinations and sampled trajectories datasets. Preprocess datasets to adapt from NetLogo’s specific format and categorise end states and trajectories.</p>
 <div class="cell">
 <details class="code-fold">
@@ -580,8 +574,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>As with all other versions, the variable <code>survival</code> is created during preprocessing to classify whether populations get extinct, survive with certain size, within the maximum number of simulation steps (<code>max-iterations</code>). As in v1.2.x, <code>pressure</code> (and <code>final_pressure</code> for trajectories) emerges as a measure of population pressure, calculated during <code>preprocess_simdata()</code>, as <code>totalIndividuals / carrying_capacity</code>.</p>
 <p>Because of the sheer number of daily iterations required to approach comparable time scales of previous versions, trajectories datasets are simply too large to be loaded conventionally in R. For this reason, we need to use the function argument <code>ignored_variables</code> (alternatively also <code>selected_variables</code> is available) to skip loading unnecessary variables, as well as potentially restricting the span of the simulation data to a subset of iteration steps (<code>start_step</code>, <code>end_step</code>). The different trajectory-type data frames must be loaded, preprocessed, saved as RData, and cleared, so that only one is in memory simultaneously.</p>
-<section id="surviving-population-structure" class="level3" data-number="9.3.1">
-<h3 data-number="9.3.1" class="anchored" data-anchor-id="surviving-population-structure"><span class="header-section-number">9.3.1</span> Surviving population structure</h3>
+<section id="surviving-population-structure" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="surviving-population-structure"><span class="header-section-number">8.3.1</span> Surviving population structure</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -659,10 +653,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 </section>
 </section>
-<section id="overview-of-end-states-and-dynamics" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="overview-of-end-states-and-dynamics"><span class="header-section-number">9.4</span> Overview of end states and dynamics</h2>
-<section id="population-persistence" class="level3" data-number="9.4.1">
-<h3 data-number="9.4.1" class="anchored" data-anchor-id="population-persistence"><span class="header-section-number">9.4.1</span> Population persistence</h3>
+<section id="overview-of-end-states-and-dynamics" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="overview-of-end-states-and-dynamics"><span class="header-section-number">8.4</span> Overview of end states and dynamics</h2>
+<section id="population-persistence" class="level3" data-number="8.4.1">
+<h3 data-number="8.4.1" class="anchored" data-anchor-id="population-persistence"><span class="header-section-number">8.4.1</span> Population persistence</h3>
 <p>We start with an overview of end states across residence rules and the categorical “regions” of the Coale-Demeny model (<code>coale-demeny-region</code>), which are the two categorical parameters explored outside the Sobol sampling. The histogram shows the distribution of final population sizes for each residence rule, with different colours indicating whether the population became extinct or survived. The vertical line represents the maximum population size defined in the model, which helps visually assess how many simulations reached or exceeded this threshold. The x-axis can be set to a logarithmic scale to better visualise differences in population sizes among those that survived.</p>
 <div class="cell">
 <details class="code-fold">
@@ -774,8 +768,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Population pressure is concentrated well below unity, with a broad mode around 0.3–0.4, showing that density-dependent mortality can maintain viable populations substantially below nominal carrying capacity. The Coale-Demeny regional mortality families generate only modest differences in the overall distribution of outcomes.</p>
 <p>Residence rule introduces a small but consistent asymmetry. Matrilocal-matrilineal populations show a somewhat higher frequency of survival and a slightly larger share of high-pressure states than patrilocal-patrilineal populations. The difference remains modest relative to the effects of the continuously varied demographic and density-regulation parameters and should therefore be interpreted as a secondary interaction rather than an intrinsic resilience advantage.</p>
 </section>
-<section id="temporal-trajectories" class="level3" data-number="9.4.2">
-<h3 data-number="9.4.2" class="anchored" data-anchor-id="temporal-trajectories"><span class="header-section-number">9.4.2</span> Temporal trajectories</h3>
+<section id="temporal-trajectories" class="level3" data-number="8.4.2">
+<h3 data-number="8.4.2" class="anchored" data-anchor-id="temporal-trajectories"><span class="header-section-number">8.4.2</span> Temporal trajectories</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -981,8 +975,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The residence systems nevertheless occupy different regulatory positions. Matrilocal-matrilineal populations generally remain closer to the nominal carrying capacity and cross it frequently, whereas patrilocal-patrilineal populations tend to remain somewhat further below it. The latter trajectories also display larger short-term fluctuations in their median path, although neither system exhibits sustained runaway growth or systematic collapse.</p>
 <p>These trajectories therefore illustrate how identical environmental and demographic parameter settings can produce different realised pressure regimes through residence-dependent household dynamics. The difference concerns the position of the regulated population relative to carrying capacity rather than a simple survival-versus-extinction contrast.</p>
 </section>
-<section id="household-composition" class="level3" data-number="9.4.3">
-<h3 data-number="9.4.3" class="anchored" data-anchor-id="household-composition"><span class="header-section-number">9.4.3</span> Household composition</h3>
+<section id="household-composition" class="level3" data-number="8.4.3">
+<h3 data-number="8.4.3" class="anchored" data-anchor-id="household-composition"><span class="header-section-number">8.4.3</span> Household composition</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1137,8 +1131,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The trajectory experiment shows an initial increase in mean household size followed by prolonged fluctuation around a relatively stable late-run range. Patrilocal-patrilineal trajectories display somewhat greater temporal variability, but there is no evidence of sustained divergence in household size between the two residence systems.</p>
 <p>The trajectories reaching the largest household-size peaks remain viable over the displayed simulation period. These peaks should therefore be treated as examples of stochastic household aggregation rather than as indicators of impending population collapse. Household composition varies appreciably through time, but the present experiment does not establish unusually large households as a causal precursor of extinction.</p>
 </section>
-<section id="density-regulation-dynamics" class="level3" data-number="9.4.4">
-<h3 data-number="9.4.4" class="anchored" data-anchor-id="density-regulation-dynamics"><span class="header-section-number">9.4.4</span> Density regulation dynamics</h3>
+<section id="density-regulation-dynamics" class="level3" data-number="8.4.4">
+<h3 data-number="8.4.4" class="anchored" data-anchor-id="density-regulation-dynamics"><span class="header-section-number">8.4.4</span> Density regulation dynamics</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1206,10 +1200,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Residence rule instead strongly affects the position of the regulated trajectories relative to nominal carrying capacity. Most matrilocal-matrilineal trajectories are classified as Overshooting because they spend sufficient time above the carrying-capacity threshold, whereas almost all patrilocal-patrilineal trajectories are Stress-prone, remaining under carrying capacity but above the high-pressure threshold.</p>
 <p>Thus, the principal residence-specific contrast in this experiment is not one of stability or survival. Both systems sustain stable high-pressure populations, but matrilocal-matrilineal organisation tends to maintain populations closer to, and more frequently above, nominal capacity. Patrilocal-patrilineal organisation maintains somewhat lower mean pressure while remaining firmly within the high-pressure regime.</p>
 </section>
-<section id="age-structure" class="level3" data-number="9.4.5">
-<h3 data-number="9.4.5" class="anchored" data-anchor-id="age-structure"><span class="header-section-number">9.4.5</span> Age structure</h3>
-<section id="survival-categories" class="level4" data-number="9.4.5.1">
-<h4 data-number="9.4.5.1" class="anchored" data-anchor-id="survival-categories"><span class="header-section-number">9.4.5.1</span> Survival categories</h4>
+<section id="age-structure" class="level3" data-number="8.4.5">
+<h3 data-number="8.4.5" class="anchored" data-anchor-id="age-structure"><span class="header-section-number">8.4.5</span> Age structure</h3>
+<section id="survival-categories" class="level4" data-number="8.4.5.1">
+<h4 data-number="8.4.5.1" class="anchored" data-anchor-id="survival-categories"><span class="header-section-number">8.4.5.1</span> Survival categories</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1348,8 +1342,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This relationship is consistent with the demographic mechanisms driving population pressure. Parameter combinations supporting more rapid cohort renewal simultaneously produce younger populations and sustain greater population abundance relative to carrying capacity, whereas slower renewal is associated with older populations maintained at lower pressure. Population pressure in v1.4 therefore reflects not only proximity to the environmental limit but also the reproductive tempo and age composition through which that population level is generated.</p>
 <p>Overshooting populations display age structures broadly similar to high-pressure persistent populations, suggesting that the main demographic transition occurs between low- and high-pressure regimes rather than specifically at the carrying-capacity threshold.</p>
 </section>
-<section id="residence-rule-and-coale-demeny-regions" class="level4" data-number="9.4.5.2">
-<h4 data-number="9.4.5.2" class="anchored" data-anchor-id="residence-rule-and-coale-demeny-regions"><span class="header-section-number">9.4.5.2</span> Residence rule and Coale-Demeny regions</h4>
+<section id="residence-rule-and-coale-demeny-regions" class="level4" data-number="8.4.5.2">
+<h4 data-number="8.4.5.2" class="anchored" data-anchor-id="residence-rule-and-coale-demeny-regions"><span class="header-section-number">8.4.5.2</span> Residence rule and Coale-Demeny regions</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1624,10 +1618,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 </section>
 </section>
-<section id="sensitivity-analysis" class="level2" data-number="9.5">
-<h2 data-number="9.5" class="anchored" data-anchor-id="sensitivity-analysis"><span class="header-section-number">9.5</span> Sensitivity analysis</h2>
-<section id="prepare-data-for-sensitivity-analysis" class="level3" data-number="9.5.1">
-<h3 data-number="9.5.1" class="anchored" data-anchor-id="prepare-data-for-sensitivity-analysis"><span class="header-section-number">9.5.1</span> Prepare data for sensitivity analysis</h3>
+<section id="sensitivity-analysis" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="sensitivity-analysis"><span class="header-section-number">8.5</span> Sensitivity analysis</h2>
+<section id="prepare-data-for-sensitivity-analysis" class="level3" data-number="8.5.1">
+<h3 data-number="8.5.1" class="anchored" data-anchor-id="prepare-data-for-sensitivity-analysis"><span class="header-section-number">8.5.1</span> Prepare data for sensitivity analysis</h3>
 <p>Prepare a dataframe out of <code>endstates</code> that contains only predictors (explored parameters) and response variables (<code>pressure</code>, <code>survival</code>, <code>median_age</code>), as well as splitting it according to <code>residence_rule</code>.</p>
 <div class="cell">
 <details class="code-fold">
@@ -1646,8 +1640,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 </div>
 </section>
-<section id="fitting-random-forest-models" class="level3" data-number="9.5.2">
-<h3 data-number="9.5.2" class="anchored" data-anchor-id="fitting-random-forest-models"><span class="header-section-number">9.5.2</span> Fitting Random-forest models</h3>
+<section id="fitting-random-forest-models" class="level3" data-number="8.5.2">
+<h3 data-number="8.5.2" class="anchored" data-anchor-id="fitting-random-forest-models"><span class="header-section-number">8.5.2</span> Fitting Random-forest models</h3>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1664,10 +1658,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Random forest models are fitted separately for each residence rule, using the same set of predictors. The response variables include <code>pressure</code>, <code>survival</code>, and <code>median_age</code>, allowing us to assess the importance of predictors for different aspects of population dynamics and structure. Notice that the model built for <code>median_age</code> uses only cases with surviving populations.</p>
 <p>The models are built using a consistent random seed to ensure reproducibility, and the option to overwrite existing models is controlled by the <code>REMAKE_RF</code> flag.</p>
 </section>
-<section id="parameter-importance-and-partial-dependence" class="level3" data-number="9.5.3">
-<h3 data-number="9.5.3" class="anchored" data-anchor-id="parameter-importance-and-partial-dependence"><span class="header-section-number">9.5.3</span> Parameter importance and partial dependence</h3>
-<section id="survival-probability-of-extinction-end-state" class="level4" data-number="9.5.3.1">
-<h4 data-number="9.5.3.1" class="anchored" data-anchor-id="survival-probability-of-extinction-end-state"><span class="header-section-number">9.5.3.1</span> Survival (probability of extinction end state)</h4>
+<section id="parameter-importance-and-partial-dependence" class="level3" data-number="8.5.3">
+<h3 data-number="8.5.3" class="anchored" data-anchor-id="parameter-importance-and-partial-dependence"><span class="header-section-number">8.5.3</span> Parameter importance and partial dependence</h3>
+<section id="survival-probability-of-extinction-end-state" class="level4" data-number="8.5.3.1">
+<h4 data-number="8.5.3.1" class="anchored" data-anchor-id="survival-probability-of-extinction-end-state"><span class="header-section-number">8.5.3.1</span> Survival (probability of extinction end state)</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1795,8 +1789,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><code>density_effect_scaling_factor</code> is the second most important predictor, demonstrating that the strength of ecological feedback becomes a major determinant of viability once density-dependent mortality is introduced. Several female union-formation parameters, particularly pre-peak spread and modal timing, form the next tier, while baseline mortality intensity (<code>cdmlt_level</code>) contributes at a lower level.</p>
 <p>The survival response therefore reflects two principal forces: reproductive replacement, dominated by fertility peak intensity, and the mortality cost imposed by density regulation. Residence rule modifies the relative importance of several sex-specific union parameters but does not alter this overall hierarchy.</p>
 </section>
-<section id="population-pressure" class="level4" data-number="9.5.3.2">
-<h4 data-number="9.5.3.2" class="anchored" data-anchor-id="population-pressure"><span class="header-section-number">9.5.3.2</span> Population pressure</h4>
+<section id="population-pressure" class="level4" data-number="8.5.3.2">
+<h4 data-number="8.5.3.2" class="anchored" data-anchor-id="population-pressure"><span class="header-section-number">8.5.3.2</span> Population pressure</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1923,8 +1917,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Fertility peak intensity is the second strongest predictor and acts in the opposite direction: higher fertility increases population pressure by sustaining more rapid demographic recruitment. Baseline mortality (<code>cdmlt_level</code>) is also important, with lower mortality allowing populations to maintain greater pressure.</p>
 <p>Sex-specific union parameters provide a secondary layer of regulation, particularly male peak intensity and female pre-peak spread, while nominal <code>carrying_capacity</code> itself has considerably less importance than the strength of the density response. The realised position of a population relative to capacity is therefore determined more by demographic recruitment and feedback intensity than by the absolute numerical value of capacity alone.</p>
 </section>
-<section id="median-age" class="level4" data-number="9.5.3.3">
-<h4 data-number="9.5.3.3" class="anchored" data-anchor-id="median-age"><span class="header-section-number">9.5.3.3</span> Median age</h4>
+<section id="median-age" class="level4" data-number="8.5.3.3">
+<h4 data-number="8.5.3.3" class="anchored" data-anchor-id="median-age"><span class="header-section-number">8.5.3.3</span> Median age</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -2052,11 +2046,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Age composition in v1.4 is therefore controlled primarily by the tempo and distribution of reproduction and union formation, while density regulation and mortality exert their stronger effects on survival and population pressure.</p>
 </section>
 </section>
-<section id="age-structure-of-surviving-populations-for-selected-parameters" class="level3" data-number="9.5.4">
-<h3 data-number="9.5.4" class="anchored" data-anchor-id="age-structure-of-surviving-populations-for-selected-parameters"><span class="header-section-number">9.5.4</span> Age structure of surviving populations for selected parameters</h3>
+<section id="age-structure-of-surviving-populations-for-selected-parameters" class="level3" data-number="8.5.4">
+<h3 data-number="8.5.4" class="anchored" data-anchor-id="age-structure-of-surviving-populations-for-selected-parameters"><span class="header-section-number">8.5.4</span> Age structure of surviving populations for selected parameters</h3>
 <p>Note: parameters are grouped by submodels and meaning, not by importance. The binary categories created earlier in preprocessing, which split the parameter range according to the distribution median, are used.</p>
-<section id="c1_fert-high-versus-low-fertility-peak-intensity-regimes" class="level4" data-number="9.5.4.1">
-<h4 data-number="9.5.4.1" class="anchored" data-anchor-id="c1_fert-high-versus-low-fertility-peak-intensity-regimes"><span class="header-section-number">9.5.4.1</span> <code>c1_fert</code>: high <em>versus</em> low fertility peak intensity regimes</h4>
+<section id="c1_fert-high-versus-low-fertility-peak-intensity-regimes" class="level4" data-number="8.5.4.1">
+<h4 data-number="8.5.4.1" class="anchored" data-anchor-id="c1_fert-high-versus-low-fertility-peak-intensity-regimes"><span class="header-section-number">8.5.4.1</span> <code>c1_fert</code>: high <em>versus</em> low fertility peak intensity regimes</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -2252,8 +2246,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Higher fertility peak intensity produces substantially younger populations under both residence rules, with medium effects ((d=-0.76) and (-0.69)). It remains by far the strongest parameter-specific determinant of age structure, confirming that reproductive intensity governs cohort renewal even under density-dependent mortality.</p>
 </section>
-<section id="mu_fert-early-versus-late-fertility-timing" class="level4" data-number="9.5.4.2">
-<h4 data-number="9.5.4.2" class="anchored" data-anchor-id="mu_fert-early-versus-late-fertility-timing"><span class="header-section-number">9.5.4.2</span> <code>mu_fert</code>: early <em>versus</em> late fertility timing</h4>
+<section id="mu_fert-early-versus-late-fertility-timing" class="level4" data-number="8.5.4.2">
+<h4 data-number="8.5.4.2" class="anchored" data-anchor-id="mu_fert-early-versus-late-fertility-timing"><span class="header-section-number">8.5.4.2</span> <code>mu_fert</code>: early <em>versus</em> late fertility timing</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -2449,8 +2443,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Earlier fertility timing is associated with slightly younger surviving populations under both residence systems, but the effect is very small ((d=-0.12) and (-0.14)). Modal fertility age therefore contributes to demographic pacing, but its structural influence is modest compared with fertility peak intensity and fertility spread.</p>
 </section>
-<section id="sigma1_fert-broad-versus-narrow-pre-peak-fertility-spread-regimes" class="level4" data-number="9.5.4.3">
-<h4 data-number="9.5.4.3" class="anchored" data-anchor-id="sigma1_fert-broad-versus-narrow-pre-peak-fertility-spread-regimes"><span class="header-section-number">9.5.4.3</span> <code>sigma1_fert</code>: broad <em>versus</em> narrow pre-peak fertility spread regimes</h4>
+<section id="sigma1_fert-broad-versus-narrow-pre-peak-fertility-spread-regimes" class="level4" data-number="8.5.4.3">
+<h4 data-number="8.5.4.3" class="anchored" data-anchor-id="sigma1_fert-broad-versus-narrow-pre-peak-fertility-spread-regimes"><span class="header-section-number">8.5.4.3</span> <code>sigma1_fert</code>: broad <em>versus</em> narrow pre-peak fertility spread regimes</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -2646,8 +2640,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Broader pre-peak fertility schedules produce younger populations, particularly under matrilocal-matrilineal residence. The effect is small there ((d=-0.22)) but very small under patrilocal-patrilineal residence ((d=-0.07)). Early reproductive spread therefore has a residence-dependent but secondary influence on age structure.</p>
 </section>
-<section id="sigma2_fert-broad-versus-narrow-post-peak-fertility-regimes" class="level4" data-number="9.5.4.4">
-<h4 data-number="9.5.4.4" class="anchored" data-anchor-id="sigma2_fert-broad-versus-narrow-post-peak-fertility-regimes"><span class="header-section-number">9.5.4.4</span> <code>sigma2_fert</code>: broad <em>versus</em> narrow post-peak fertility regimes</h4>
+<section id="sigma2_fert-broad-versus-narrow-post-peak-fertility-regimes" class="level4" data-number="8.5.4.4">
+<h4 data-number="8.5.4.4" class="anchored" data-anchor-id="sigma2_fert-broad-versus-narrow-post-peak-fertility-regimes"><span class="header-section-number">8.5.4.4</span> <code>sigma2_fert</code>: broad <em>versus</em> narrow post-peak fertility regimes</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -2843,8 +2837,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Broader post-peak fertility schedules are associated with younger populations under both residence systems. The effect is small ((d=-0.43) and (-0.33)), making post-peak fertility spread one of the more substantial secondary determinants of age composition. Extended reproductive opportunity appears to sustain cohort renewal over a wider range of adult ages.</p>
 </section>
-<section id="cdmlt_level-mortality-regimes" class="level4" data-number="9.5.4.5">
-<h4 data-number="9.5.4.5" class="anchored" data-anchor-id="cdmlt_level-mortality-regimes"><span class="header-section-number">9.5.4.5</span> <code>cdmlt_level</code>: mortality regimes</h4>
+<section id="cdmlt_level-mortality-regimes" class="level4" data-number="8.5.4.5">
+<h4 data-number="8.5.4.5" class="anchored" data-anchor-id="cdmlt_level-mortality-regimes"><span class="header-section-number">8.5.4.5</span> <code>cdmlt_level</code>: mortality regimes</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3037,8 +3031,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Baseline mortality intensity has essentially no direct effect on median age among surviving populations in v1.4. Mean median ages are nearly identical between the two mortality categories under both residence rules, and effect sizes are effectively zero. Mortality remains relevant to population survival and pressure, but variation in Coale-Demeny level contributes little to the age composition of populations that persist.</p>
 </section>
-<section id="c1_women-high-versus-low-female-union-peak-intensity-regimes" class="level4" data-number="9.5.4.6">
-<h4 data-number="9.5.4.6" class="anchored" data-anchor-id="c1_women-high-versus-low-female-union-peak-intensity-regimes"><span class="header-section-number">9.5.4.6</span> <code>c1_women</code>: high <em>versus</em> low female union peak intensity regimes</h4>
+<section id="c1_women-high-versus-low-female-union-peak-intensity-regimes" class="level4" data-number="8.5.4.6">
+<h4 data-number="8.5.4.6" class="anchored" data-anchor-id="c1_women-high-versus-low-female-union-peak-intensity-regimes"><span class="header-section-number">8.5.4.6</span> <code>c1_women</code>: high <em>versus</em> low female union peak intensity regimes</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3234,8 +3228,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Higher female union peak intensity is associated with slightly younger surviving populations under both residence systems, but the effect is very small ((d=-0.14) and (-0.17)). Female union intensity therefore remains a secondary contributor to cohort renewal rather than a major determinant of age composition.</p>
 </section>
-<section id="mu_women-late-versus-early-female-union-timing-regimes" class="level4" data-number="9.5.4.7">
-<h4 data-number="9.5.4.7" class="anchored" data-anchor-id="mu_women-late-versus-early-female-union-timing-regimes"><span class="header-section-number">9.5.4.7</span> <code>mu_women</code>: late <em>versus</em> early female union timing regimes</h4>
+<section id="mu_women-late-versus-early-female-union-timing-regimes" class="level4" data-number="8.5.4.7">
+<h4 data-number="8.5.4.7" class="anchored" data-anchor-id="mu_women-late-versus-early-female-union-timing-regimes"><span class="header-section-number">8.5.4.7</span> <code>mu_women</code>: late <em>versus</em> early female union timing regimes</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3431,8 +3425,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Female union timing shows weak and residence-dependent relationships with median age. Under matrilocal-matrilineal residence, earlier union formation is associated with slightly younger populations ((d=-0.12)). Under patrilocal-patrilineal residence the relationship is reversed but similarly small ((d=0.13)), with earlier female union timing associated with slightly older populations. Given the very small magnitudes, this contrast is better interpreted as context dependence than as a general directional effect.</p>
 </section>
-<section id="sigma1_women-broad-versus-narrow-pre-peak-female-union-spread-regimes" class="level4" data-number="9.5.4.8">
-<h4 data-number="9.5.4.8" class="anchored" data-anchor-id="sigma1_women-broad-versus-narrow-pre-peak-female-union-spread-regimes"><span class="header-section-number">9.5.4.8</span> <code>sigma1_women</code>: broad <em>versus</em> narrow pre-peak female union spread regimes</h4>
+<section id="sigma1_women-broad-versus-narrow-pre-peak-female-union-spread-regimes" class="level4" data-number="8.5.4.8">
+<h4 data-number="8.5.4.8" class="anchored" data-anchor-id="sigma1_women-broad-versus-narrow-pre-peak-female-union-spread-regimes"><span class="header-section-number">8.5.4.8</span> <code>sigma1_women</code>: broad <em>versus</em> narrow pre-peak female union spread regimes</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3628,8 +3622,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Broader pre-peak female union spread is associated with slightly younger populations under matrilocal-matrilineal residence ((d=-0.14)), but has essentially no effect under patrilocal-patrilineal residence. Its demographic influence is therefore weak and concentrated in the residence system where women constitute the locally retained line.</p>
 </section>
-<section id="sigma2_women-broad-versus-narrow-post-peak-female-union-spread-regimes" class="level4" data-number="9.5.4.9">
-<h4 data-number="9.5.4.9" class="anchored" data-anchor-id="sigma2_women-broad-versus-narrow-post-peak-female-union-spread-regimes"><span class="header-section-number">9.5.4.9</span> <code>sigma2_women</code>: broad <em>versus</em> narrow post-peak female union spread regimes</h4>
+<section id="sigma2_women-broad-versus-narrow-post-peak-female-union-spread-regimes" class="level4" data-number="8.5.4.9">
+<h4 data-number="8.5.4.9" class="anchored" data-anchor-id="sigma2_women-broad-versus-narrow-post-peak-female-union-spread-regimes"><span class="header-section-number">8.5.4.9</span> <code>sigma2_women</code>: broad <em>versus</em> narrow post-peak female union spread regimes</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3825,8 +3819,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Post-peak female union spread has only very small and residence-dependent effects. Under matrilocal-matrilineal residence, broader schedules are associated with a marginally older median age, whereas under patrilocal-patrilineal residence they are associated with a slightly younger population ((d=-0.14)). Neither relationship is large enough to support a strong general demographic interpretation.</p>
 </section>
-<section id="c1_men-high-versus-low-male-union-peak-intensity-regimes" class="level4" data-number="9.5.4.10">
-<h4 data-number="9.5.4.10" class="anchored" data-anchor-id="c1_men-high-versus-low-male-union-peak-intensity-regimes"><span class="header-section-number">9.5.4.10</span> <code>c1_men</code>: high <em>versus</em> low male union peak intensity regimes</h4>
+<section id="c1_men-high-versus-low-male-union-peak-intensity-regimes" class="level4" data-number="8.5.4.10">
+<h4 data-number="8.5.4.10" class="anchored" data-anchor-id="c1_men-high-versus-low-male-union-peak-intensity-regimes"><span class="header-section-number">8.5.4.10</span> <code>c1_men</code>: high <em>versus</em> low male union peak intensity regimes</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -4022,8 +4016,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Higher male union peak intensity produces younger age structures under both residence systems, with small and nearly identical effects ((d=-0.20) and (-0.22)). Male union intensity therefore has a modest but consistent association with demographic renewal.</p>
 </section>
-<section id="mu_men-late-versus-early-male-union-timing-regimes" class="level4" data-number="9.5.4.11">
-<h4 data-number="9.5.4.11" class="anchored" data-anchor-id="mu_men-late-versus-early-male-union-timing-regimes"><span class="header-section-number">9.5.4.11</span> <code>mu_men</code>: late <em>versus</em> early male union timing regimes</h4>
+<section id="mu_men-late-versus-early-male-union-timing-regimes" class="level4" data-number="8.5.4.11">
+<h4 data-number="8.5.4.11" class="anchored" data-anchor-id="mu_men-late-versus-early-male-union-timing-regimes"><span class="header-section-number">8.5.4.11</span> <code>mu_men</code>: late <em>versus</em> early male union timing regimes</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -4219,8 +4213,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Earlier male union timing is associated with younger surviving populations under both residence rules. The effect is small and slightly stronger under patrilocal-patrilineal residence ((d=-0.38)) than under matrilocal-matrilineal residence ((d=-0.34)), although the difference between systems is modest.</p>
 </section>
-<section id="sigma1_men-broad-versus-narrow-male-pre-peak-union-spread-regimes" class="level4" data-number="9.5.4.12">
-<h4 data-number="9.5.4.12" class="anchored" data-anchor-id="sigma1_men-broad-versus-narrow-male-pre-peak-union-spread-regimes"><span class="header-section-number">9.5.4.12</span> <code>sigma1_men</code>: broad <em>versus</em> narrow male pre-peak union spread regimes</h4>
+<section id="sigma1_men-broad-versus-narrow-male-pre-peak-union-spread-regimes" class="level4" data-number="8.5.4.12">
+<h4 data-number="8.5.4.12" class="anchored" data-anchor-id="sigma1_men-broad-versus-narrow-male-pre-peak-union-spread-regimes"><span class="header-section-number">8.5.4.12</span> <code>sigma1_men</code>: broad <em>versus</em> narrow male pre-peak union spread regimes</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -4416,8 +4410,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Broader pre-peak male union spread produces younger populations under both residence systems. The effect is small under matrilocal-matrilineal residence ((d=-0.27)) and considerably stronger under patrilocal-patrilineal residence ((d=-0.47)). This is one of the clearest residence-dependent union-formation effects in v1.4.</p>
 </section>
-<section id="sigma2_men-broad-versus-narrow-post-peak-male-union-spread-regimes" class="level4" data-number="9.5.4.13">
-<h4 data-number="9.5.4.13" class="anchored" data-anchor-id="sigma2_men-broad-versus-narrow-post-peak-male-union-spread-regimes"><span class="header-section-number">9.5.4.13</span> <code>sigma2_men</code>: broad <em>versus</em> narrow post-peak male union spread regimes</h4>
+<section id="sigma2_men-broad-versus-narrow-post-peak-male-union-spread-regimes" class="level4" data-number="8.5.4.13">
+<h4 data-number="8.5.4.13" class="anchored" data-anchor-id="sigma2_men-broad-versus-narrow-post-peak-male-union-spread-regimes"><span class="header-section-number">8.5.4.13</span> <code>sigma2_men</code>: broad <em>versus</em> narrow post-peak male union spread regimes</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -4613,8 +4607,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Post-peak male union spread has no meaningful effect on median age under either residence rule. Effect sizes are effectively zero and both confidence intervals include zero, providing little evidence that late male union formation contributes appreciably to long-term age composition.</p>
 </section>
-<section id="amenorrhea_period_in_days-long-versus-short-amenorrhea-period" class="level4" data-number="9.5.4.14">
-<h4 data-number="9.5.4.14" class="anchored" data-anchor-id="amenorrhea_period_in_days-long-versus-short-amenorrhea-period"><span class="header-section-number">9.5.4.14</span> <code>amenorrhea_period_in_days</code>: long <em>versus</em> short amenorrhea period</h4>
+<section id="amenorrhea_period_in_days-long-versus-short-amenorrhea-period" class="level4" data-number="8.5.4.14">
+<h4 data-number="8.5.4.14" class="anchored" data-anchor-id="amenorrhea_period_in_days-long-versus-short-amenorrhea-period"><span class="header-section-number">8.5.4.14</span> <code>amenorrhea_period_in_days</code>: long <em>versus</em> short amenorrhea period</h4>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -4810,16 +4804,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Longer postpartum amenorrhoea is associated with slightly older surviving populations under both residence systems, with very small but highly similar effects ((d)). Mean median age increases by roughly 1.3 years between short- and long-amenorrhoea regimes. Birth spacing therefore remains a modest but consistent influence on demographic turnover, weaker than fertility peak intensity but comparable to several union-formation parameters.</p>
 </section>
-<section id="interpretation" class="level4" data-number="9.5.4.15">
-<h4 data-number="9.5.4.15" class="anchored" data-anchor-id="interpretation"><span class="header-section-number">9.5.4.15</span> Interpretation</h4>
+<section id="interpretation" class="level4" data-number="8.5.4.15">
+<h4 data-number="8.5.4.15" class="anchored" data-anchor-id="interpretation"><span class="header-section-number">8.5.4.15</span> Interpretation</h4>
 <p>Across the parameter-specific analyses, fertility remains the principal determinant of age structure in v1.4. Fertility peak intensity produces the largest effect by a wide margin, while fertility spread and several union-formation parameters provide secondary controls over cohort renewal.</p>
 <p>Postpartum amenorrhoea contributes a smaller but consistent ageing effect through longer birth intervals. Baseline mortality, by contrast, has almost no direct effect on median age among surviving populations despite retaining importance for survival and population pressure.</p>
 <p>Density-dependent regulation therefore differentiates the roles of the model’s mechanisms: fertility and union formation primarily structure the composition of surviving populations, while ecological feedback and mortality more strongly determine whether populations persist and where they stabilise relative to carrying capacity.</p>
 </section>
 </section>
 </section>
-<section id="density-effect-scaling-sweep-experiment" class="level2" data-number="9.6">
-<h2 data-number="9.6" class="anchored" data-anchor-id="density-effect-scaling-sweep-experiment"><span class="header-section-number">9.6</span> Density effect scaling sweep experiment</h2>
+<section id="density-effect-scaling-sweep-experiment" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="density-effect-scaling-sweep-experiment"><span class="header-section-number">8.6</span> Density effect scaling sweep experiment</h2>
 <p>Simulations using the same parameter configuration, except <code>residence-rule</code>, and varying <code>density_effect_scaling_factor</code> and <code>SEED</code>.</p>
 <div class="cell">
 <details class="code-fold">
@@ -5034,8 +5028,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The relationship is therefore monotonic rather than threshold-like. Density-effect strength controls the equilibrium level of the population relative to environmental capacity, while all tested positive values remain viable under this favourable demographic configuration.</p>
 <p>The two residence systems respond almost identically across the sweep. In this experiment, the regulatory strength of density-dependent mortality greatly exceeds any residence-specific difference in the realised equilibrium population.</p>
 </section>
-<section id="discussion-notes" class="level2" data-number="9.7">
-<h2 data-number="9.7" class="anchored" data-anchor-id="discussion-notes"><span class="header-section-number">9.7</span> Discussion notes</h2>
+<section id="discussion-notes" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="discussion-notes"><span class="header-section-number">8.7</span> Discussion notes</h2>
 <p>Version 1.4 combines daily demographic scheduling with head-count-based density-dependent mortality. The resulting system retains the fertility-driven demographic architecture of the daily baseline while introducing an ecological feedback that regulates population abundance relative to nominal carrying capacity.</p>
 <p>Fertility peak intensity remains the strongest determinant of demographic viability and age composition. Density-effect strength becomes the principal ecological control, ranking second for survival and first for population pressure. Baseline mortality remains relevant to survival and pressure but contributes little to age structure among populations that persist.</p>
 <p>The end-state exploration shows that surviving populations are most commonly maintained under low population pressure, although a substantial minority persist at high pressure and rare populations overshoot nominal capacity. The targeted scaling experiment demonstrates why these different equilibria arise: increasing <code>density_effect_scaling_factor</code> progressively lowers the population maintained relative to carrying capacity, while removing the density effect restores unrestricted growth.</p>
@@ -5044,8 +5038,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Residence rule has only a small aggregate effect on survival and age structure, although it modifies several sex-specific union parameters and the location of trajectories relative to carrying capacity. Its effects should therefore be understood as interactional rather than as evidence that either residence system is generally more resilient.</p>
 <p>Overall, v1.4 shows that daily demographic timing and ecological regulation act on different dimensions of system behaviour. Daily scheduling structures reproductive tempo and cohort formation, while density-dependent mortality determines the population level that those demographic processes can sustain.</p>
 </section>
-<section id="chapter-conclusion" class="level2" data-number="9.8">
-<h2 data-number="9.8" class="anchored" data-anchor-id="chapter-conclusion"><span class="header-section-number">9.8</span> Chapter conclusion</h2>
+<section id="chapter-conclusion" class="level2" data-number="8.8">
+<h2 data-number="8.8" class="anchored" data-anchor-id="chapter-conclusion"><span class="header-section-number">8.8</span> Chapter conclusion</h2>
 <p>Version 1.4 establishes the daily head-count-based density-regulated formulation of the Household Demography model. Fertility peak intensity remains the dominant demographic control on survival and age structure, while <code>density_effect_scaling_factor</code> emerges as the principal determinant of population pressure and a major secondary determinant of viability.</p>
 <p>Surviving populations occupy a range of regulated states, most commonly below the high-pressure threshold, while targeted experiments show that density-effect strength continuously controls equilibrium population size from unrestricted growth at zero regulation to increasingly low-pressure persistence under stronger feedback. Residence organisation modifies particular union-formation effects and the realised position of populations relative to carrying capacity, but remains secondary to fertility and density regulation at the aggregate level.</p>
 <p>The model therefore provides the appropriate daily counterpart to v1.2 and the baseline from which the demand-weighted daily versions can be evaluated.</p>
@@ -5127,7 +5121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/github\.com\/Andros-Spica\/indus-village-model");
+        var filterRegex = new RegExp("https:\/\/two-rains\.github\.io\/Household-Demography-Angourakis-Petrie-2026\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -5457,12 +5451,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./v-1-3.html" class="pagination-link" aria-label="Base model with daily iteration (v1.3)">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Base model with daily iteration (v1.3)</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Base model with daily iteration (v1.3)</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./v-1-4-1.html" class="pagination-link" aria-label="Demand-weighted density dependent model with daily iteration (v1.4.1)">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Demand-weighted density dependent model with daily iteration (v1.4.1)</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Demand-weighted density dependent model with daily iteration (v1.4.1)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
